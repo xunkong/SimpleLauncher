@@ -1,0 +1,34 @@
+# 原神 简单启动器 v0.1.0
+# by Scighost
+# 项目地址: https://github.com/xunkong/SimpleLauncher
+# 图片来源: https://twitter.com/shenhedailys/status/1479312855518236675
+
+# 介绍
+# 正如其名，这是一个简单启动器，直接运行时会打开原神游戏本体，以管理员权限运行时会打开原神启动器。
+# 如果设置了米游社Cookie，启动成功后自动检查提醒洞天宝钱和参量质变仪的状态，可收取或可用则会发送系统通知，否则无事发生。
+
+
+# 以下设置均可不填写
+
+# 原神本体位置，不要有引号
+GenshinGamePath=C:\Program Files\Genshin Impact\Genshin Impact Game\YuanShen.exe
+
+# 原神启动器位置，不要有引号
+GenshinLauncherPath=C:\Program Files\Genshin Impact\launcher.exe
+
+# 是否以无边框窗口启动 （true | false）
+IsPopupWindow=
+
+# 是否以全屏模式启动 （true | false）
+IsFullScreen=
+
+# 启动时窗口宽高，以全屏模式启动时忽略此项 （正整数）
+Width=
+Height=
+
+# 米游社Cookie，不要换行
+# 如何获取米游社Cookie，请参考 https://xunkong.cc/help/desktop/account.html
+Cookie=
+
+# 洞天宝钱提醒阈值 （0到1之间）
+HomeCoinNotifyRatio=0.8

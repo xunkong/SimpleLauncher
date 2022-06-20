@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net6.0-windows10.0.22000.0</TargetFramework>
+		<SupportedOSPlatformVersion>10.0.17763.0</SupportedOSPlatformVersion>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<LangVersion>preview</LangVersion>
+		<ApplicationIcon>Icon.ico</ApplicationIcon>
+		<AssemblyName>SimpleLauncher</AssemblyName>
+		<Authors>Scighost</Authors>
+		<Version>0.1.0</Version>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="$(Configuration)=='Release'">
+		<SelfContained>true</SelfContained>
+		<PublishTrimmed>true</PublishTrimmed>
+		<PublishSingleFile>true</PublishSingleFile>
+		<RuntimeIdentifier>win-x64</RuntimeIdentifier>
+		<EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Content Include="Icon.ico" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Xunkong.Hoyolab" Version="0.1.2" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Update="Config.txt">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Update="Icon.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+
+</Project>
+
